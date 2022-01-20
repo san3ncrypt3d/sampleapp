@@ -6,7 +6,7 @@ from os import getcwd
 
 #target url for scan
 
-target = 'https://gse.manulife.com'
+target = 'http://localhost:4444'
 
 #apikey = '8ij7v7nl0t6d777okrh4kf3icb'
 
