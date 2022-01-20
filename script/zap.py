@@ -12,7 +12,7 @@ target = 'http://localhost:4444'
 
 
 
-zap = ZAP(proxies={'http':'http://10.234.45.19:8081','https':'http://10.234.45.19:8081'})
+zap = ZAP(proxies={'http':'http://127.0.0.1:8090','https':'http://127.0.0.1:8090'})
 
 zap.urlopen(target)
 
