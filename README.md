@@ -8,4 +8,4 @@ This is a 'hello world'-webapp, made with spring boot.
 #Python script for scan is under /script
 
 
-More information about this project can be found here: []()
+More information about this project can be found here: [OWASP ZAP & GITHUB ACTION – DAST Automation from Scratch](https://san3ncrypt3d.com/2021/12/01/GA/)
