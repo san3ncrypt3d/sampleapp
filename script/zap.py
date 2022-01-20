@@ -51,14 +51,5 @@ with open ('report.html', 'w') as f:f.write(zap.core.htmlreport())
 # XML Report
 #with open ('report.xml', 'w') as f:f.write(zap.core.xmlreport(apikey = 'apikey'))
 
-now = datetime.datetime.now().strftime("%m/%d/%Y")
-alert_severity = 't;t;t;t'  # High;Medium;Low;Info
-# CWEID;#WASCID;Description;Other Info;Solution;Reference;Request Header;Response Header;Request Body;Response Body
-alert_details = 't;t;t;t;t;t;f;f;f;f'
-source_info = 'Vulnerability Report ;{};{};v1;v1; Scan Report'.format(
-    now, now)
-path = getcwd() + "/zap-report.json"
-zap.exportreport.generate(path, "json", sourcedetails=source_info,
-                          alertseverity=alert_severity, alertdetails=alert_details, scanid=active_scan_id)
 
 zap.core.shutdown()
